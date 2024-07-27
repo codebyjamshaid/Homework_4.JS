@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <a href="index.html"><button>Go back</button></a>
+
+    <script>
+        //Task2
+
+/// Function to say hello
+function sayHello() {
+    alert("Hello");
+}
+
+// Function to take two numbers and add them
+function addNumbers() {
+    let num1 = parseInt(prompt("Enter the first number:")); // Parse the input as an integer
+    let num2 = parseInt(prompt("Enter the second number:")); // Parse the input as an integer
+    alert("Sum: " + (num1 + num2));
+}
+
+// Function to say goodbye
+function sayGoodbye() {
+    alert("Goodbye");
+}
+
+// Function to push a value into an array
+function pushToArray(array) {
+    let userName = prompt("Enter the username (static/dynamic):");
+    array.push(userName);
+    alert("Value pushed to array: " + userName);
+}
+
+let array = []; // Define the array outside the switch to persist between cases
+
+let choice = prompt("Enter your choice: 1 for Say Hello, 2 to take 2 numbers and add, 3 for Say Goodbye, 4 for Push in the array");
+
+switch (choice) {
+    case "1": // Compare against string values
+        sayHello();
+        break;
+    case "2":
+        addNumbers();
+        break;
+    case "3":
+        sayGoodbye();
+        break;
+    case "4":
+        pushToArray(array);
+        break;
+    default:
+        alert("Invalid Input");
+}
+
+
+
+    </script>
+</body>
+</html>

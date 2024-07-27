@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="index.html"><button>Go back</button></a>
+
+    <script>
+      //Task 3
+
+      let newArray = [];
+
+      // Loop from 1 to 50
+      for (let i = 1; i <= 50; i++) {
+        newArray.push(i);
+
+        if (newArray.length >= 10) {
+          break;
+        }
+      }
+
+      console.log("Array:", newArray);
+
+      // Example of pop operation
+      let poppedValue = newArray.pop();
+      console.log("Popped value:", poppedValue);
+      console.log("Array after pop:", newArray);
+    </script>
+  </body>
+</html>
